@@ -1,0 +1,135 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+      <title>Lost Website</title>
+      <style>
+        *{
+          background-color: whitesmoke;
+          margin: 15px;
+          
+        }
+        h1 {
+          color: rgb(0, 0, 0);
+          text-decoration-line: underline;
+          margin: 50px;
+          margin-left: 40px;
+          margin-right: 40px;
+          
+        }
+        .section {
+          border: 1px;
+          color: rgb(0, 0, 0);
+          border-style: groove;
+          padding: 5px;
+        }
+        .footer{
+          padding: 5px;
+          width: 100%;
+          margin: 10%;
+          position: absolute;
+          top: 100px;
+        }
+        #lt{
+          float: left;
+          margin: 10px;
+          width: 25%;
+        }
+        #lr{
+          float:right;
+         margin-left: 10px;
+         width: 25%;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>The Lost Website in the internet</h1>
+      <h2>Where to.</h2>
+      <ul>
+        <li><a href="#info">Insert information</a></li>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#pic">Picture</a></li>
+      </ul>
+      <nav class="section">
+        <h2 id="info">Info for my name database thanks. :)</h2>
+        <form action="" method="get" id="form">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </nav>
+      <div id="tech" class="section">
+        <h3>A little about technology</h3>
+        <p>
+          Technology has come a long when it comes to information. It created the world wide web. You can learn anything online whether it has to do with how to start a business to how many spots does a giraffe have.
+          Also it can teach you how to do your taxes. The world wide web has so many uses, that many say that living without it is a difficult task.
+        </p>
+      </div>
+      <div class="section">
+        <h4 id="pic">Interesting picture</h4>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeFqP2iQKynsxav4szEqHOqFbiAuuGxbnxXQ&usqp=CAU" alt="head with circuits connected to a mass of circuits">
+        <div class="feels">
+        <h4>How does this picture make you feel?</h4>
+        <form action="" method="get" id="Feeling List">
+          <input type="checkbox" name="Feelings" value="Nervous">Nervous<br>
+          <input type="checkbox" name="Feelings" value="Weirded Out">Weirded Out<br>
+          <input type="checkbox" name="Feelings" value="Emptiness">Emptiness<br>
+          <input type="checkbox" name="Feelings" value="Nothing">Nothing<br>
+          <input type="submit" value="Submit">
+        </form>
+        </div>
+        </div>
+        <div>
+          <footer>
+            <p id="lt">Author: Eric Rodriguez</p>
+            <p id="lr"><a href="mail.to:rodriguezeric0620@gmail.com">rodriguezeric0620@gmail.com</a></p>
+          </footer>
+        </div>
+      <script>
+        
+      </script>
+
+    </body>
+
+
+
+
+
+
+
+
+    </html>
